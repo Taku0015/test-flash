@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"> <!-- 文字コードの設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- レスポンシブデザインを有効にする -->
+  <title>フラッシュ暗算ゲーム</title> <!-- ブラウザタブに表示されるタイトル -->
+  <link rel="stylesheet" href="styles.css"> <!-- CSSファイルを読み込む -->
+</head>
+<body>
+  <!-- ゲーム開始画面 -->
+  <div id="startScreen">
+    <h1>フラッシュ暗算ゲーム</h1> <!-- ゲームタイトル -->
+    <label for="initialNumber">合計になる数字を入力してください：</label> <!-- プレイヤーに合計数字を入力させる -->
+    <input type="number" id="initialNumber" placeholder="数字を入力" /> <!-- ユーザーが合計数字を入力する欄 -->
+    <button id="startButton">スタート</button> <!-- ゲーム開始ボタン -->
+  </div>
+
+  <!-- 数字が表示される画面 -->
+  <div id="numberDisplay" class="full-screen hidden"></div> <!-- 数字が表示されるが初期状態で隠されている -->
+
+  <!-- ユーザーの回答画面 -->
+  <div id="answerScreen" class="hidden">
+    <p>合計の値は？</p> <!-- 質問文 -->
+    <input type="number" id="userAnswer" placeholder="合計を入力" /> <!-- ユーザーが合計を入力する欄 -->
+    <button id="checkAnswer">回答</button> <!-- 回答ボタン -->
+    <p id="result"></p> <!-- 結果（正解か不正解か）を表示する場所 -->
+  </div>
+
+  <!-- JavaScriptファイルを読み込む -->
+  <script src="app.js"></script>
+</body>
+</html>
