@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* すべての要素に対して余白とパディングをリセットし、ボックスモデルを統一 */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+    display: flex;
+    justify-content: center; /* コンテンツを水平方向で中央寄せ */
+    align-items: center; /* コンテンツを垂直方向で中央寄せ */
+    height: 100vh; /* ビューポートの高さに合わせて高さを設定 */
+    background-color: #f4f4f9; /* 背景色を薄いグレーに設定 */
+  }
+  
+  .hidden {
+    display: none; /* hiddenクラスを持つ要素は非表示になる */
+  }
+  
+  #startScreen, #answerScreen {
+    text-align: center; /* 中央寄せ */
+  }
+  
+  #startScreen input, #answerScreen input {
+    padding: 10px; /* 入力欄にパディングを追加 */
+    font-size: 16px; /* フォントサイズを16pxに設定 */
+    margin-top: 10px; /* 上部に余白を追加 */
+  }
+  
+  button {
+    padding: 10px 20px; /* ボタンにパディングを追加 */
+    font-size: 16px; /* フォントサイズを16pxに設定 */
+    cursor: pointer; /* ボタン上にカーソルを置くとポインターに変わる */
+    background-color: #4CAF50; /* ボタンの背景色を緑に設定 */
+    color: white; /* ボタンの文字色を白に設定 */
+    border: none; /* 枠線を削除 */
+    border-radius: 5px; /* ボタンに丸みを付ける */
+    margin-top: 20px; /* 上部に余白を追加 */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* ボタンにカーソルを合わせると背景色が変わる */
+  }
+  
+  .full-screen {
+    position: fixed; /* 固定位置で画面全体に表示される */
+    top: 0;
+    left: 0;
+    width: 100%; /* 幅を画面全体に */
+    height: 100%; /* 高さを画面全体に */
+    display: flex; /* フレックスボックスでコンテンツを中央に配置 */
+    justify-content: center; /* 横方向中央寄せ */
+    align-items: center; /* 縦方向中央寄せ */
+    font-size: 100px; /* フォントサイズを大きく設定 */
+    font-weight: bold; /* 文字を太字に */
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明の白背景 */
+    color: black; /* 文字色を黒に設定 */
+  }
+  
+  #numberDisplay {
+    display: none; /* 初めは隠す */
+    color: black; /* 数字の文字色を黒に設定 */
+    font-size: 80px; /* 数字を大きく表示 */
+    font-weight: bold; /* 数字を太字で表示 */
+  }
+  
